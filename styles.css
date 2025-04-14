@@ -1,11 +1,153 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+body {
+    margin: 0;
+}
+
 * {
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
+    padding: 0;
 }
 
-p {
-    font-size: 72pt;
+h1  {
+    font-size: 48px;
     font-weight: 900;
+    margin: 0;
 }
+
+#flexSize2,
+#flexSize1 {
+    display: flex;
+    flex-grow: 0;
+}
+
+#flexSize2 {
+    justify-content: space-between;
+    flex-basis: 1000px;
+}
+
+#flexSize1 {
+    justify-content: center;
+    flex-basis: 720px;
+}
+
+#floatingCenter {
+    display:flex;
+    justify-content: center;
+}
+
+.darkblue,
+.headFoot {
+    display: flex;
+    justify-content: center;
+    background-color: #1F2937;
+    color: #fff;
+}
+
+.darkblue {
+    padding: 100px 0;
+}
+
+.headFoot {
+    padding: 20px 0;
+}
+
+.lightGray {
+    display: flex;
+    justify-content: center;
+    background-color: #e5e7eb;
+    padding: 40px 0;
+}
+
+.floating {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    gap: 40px;
+    padding: 10px 0;
+    margin: 40px;
+}
+
+.floating h1 {
+    font-size: 36px;
+}
+
+.headerLinks {
+    display: flex;
+    gap: 15px;
+}
+
+.headerLinks a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.heroText {
+    flex-basis: 50%;
+}
+
+.heroText button {
+    border: none;
+}
+
+.heroImage {
+    flex-basis: 50%;
+    background-color: #e5e7eb;
+}
+
+.thumbs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 150px;
+}
+
+.quote {
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.blueframe {
+    border-radius: 5%;
+    border: 3px solid #3882f6;
+    width: 150px;
+    height: 150px;
+}
+
+.calltoaction {
+    display: flex;
+    background-color: #3882f6;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    flex-basis: 100%;
+    padding: 20px 40px;
+    margin: 40px 0;
+    color: #fff;
+}
+
+
+button {
+    background-color: #3882f6;
+    border-radius: 10px;
+    border-color: #fff;
+    border-style: solid;
+    font-size: 18px;
+    font-family: roboto, sans-serif;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.footerGradient {
+    height: 28vh;
+    background: #1F2937;
+    background: linear-gradient(180deg,rgba(31, 41, 55, 1) 0%, rgba(15, 52, 112, 1) 100%);
+}
+
